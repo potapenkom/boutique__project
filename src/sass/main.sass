@@ -3,13 +3,14 @@
 
 body
     background-repeat: no-repeat
-    background-position: center
+    background-position: 50% 0
     
-
 .container
     width: 100%
     max-width: 1020px
     margin: 0 auto    
+
+/*Section HEADER*/
 
 .header__wrap
     background-repeat: no-repeat
@@ -17,6 +18,7 @@ body
     width: 100%  
     padding: 0 0 34% 0
     position: relative
+    z-index: -1
 
 .header__titles
     position: absolute
@@ -42,10 +44,6 @@ body
     @media screen and (max-width: 640px)
         display: none
     
-
-
-
-
 .heder__title
     display: inline-block
 
@@ -61,4 +59,148 @@ body
         font-size: 1.494em
         letter-spacing: 0.212em
 
+/*Section HEADER ends*/
 
+/*Section  CONTENT*/
+
+.content__wrapper
+    width: 100%
+    margin: -10% 0 0 0
+
+.content__backgrounds
+    display: flex
+    justify-content: space-between
+    flex-flow: row wrap
+
+.content__background
+    display: inline-block
+    background-repeat: no-repeat
+
+.background__left, .background__right
+    padding: 0 0 31% 0
+    
+.background__left
+    width: 50%
+    z-index: 2
+
+.background__right    
+    width: 22%
+    z-index: -1
+
+.background__bottom__left
+    padding: 0px 0 35%
+    width: 50%
+    margin: -17% 0 0 0
+    z-index: -1
+
+.background__bottom__right
+    padding: 0 0 28% 0   
+    width: 46%
+    margin: -15% 0 0 0
+    z-index: -1
+
+.content__wrap
+    display: flex
+    justify-content: space-around
+    align-items: flex-start
+    margin: -53% 0 0 5%
+    padding: 5.5% 0% 3.3% 0%
+    width: 100%
+    max-width: 902px
+    background-color: #ecebdd
+    z-index: 1
+
+.content__image
+    display: inline-block
+    width: 100%
+    max-width: 423px
+    z-index: 50
+
+.background__dark
+    margin: -3% 0% 0% 2%
+    padding: 16% 0 18%
+    width: 100%
+    max-width: 413px
+    background-size: cover
+    z-index: 15
+    box-shadow: 0px 10px 13px -7px #000000, 0px 6px 5px 0px rgba(0,0,0,0)
+
+.background__item
+    width: 100%
+    max-width: 260px
+    padding: 0 0 37% 0
+    z-index: 20
+    margin: 9% 0% 0% 17%
+
+.content__abouts
+    display: inline-block
+    width: 100%
+    max-width: 400px
+
+h2 
+    font-size: 1.027em
+    font-family: trajan
+    font-weight: bold
+    color: #4f192d
+    line-height: 1.2
+    letter-spacing: 0.219em
+    margin: 3.5% 0 0 13%
+    z-index: 1
+    
+.content__span
+    color: #9d2d2a   
+
+.content__text
+    font-size: 0.688em
+    font-family: Georgia, 'Times New Roman', Times, serif
+    color: #6b644c
+    line-height: 1.455
+    text-align: left
+
+.first__text
+    font-style: italic
+    width: 100%
+    max-width: 344px
+    letter-spacing: -0.2px
+
+     
+.second__text
+    padding: 4% 9% 3.8% 3.2%
+    letter-spacing: -1px
+
+.content__name
+    font-size: 0.938em
+    font-family: Georgia, 'Times New Roman', Times, serif
+    font-style: italic
+    color: #6b644c
+    text-align: right
+    padding: 0px 11% 0 0%
+
+.first__name
+    padding: 0 10% 1% 0
+
+.second__name
+    font-size: 0.688em
+    font-family: trajan
+    color: #6b644c
+
+.content__abouts
+    margin: 1.8% 0 0 0    
+
+.background__titles
+    width: 100%
+    max-width: 400px
+    padding: 0 0 9% 0
+    margin: 0 0 0 -10%
+    
+.content__inform
+    display: flex
+    width: 100%
+    max-width: 400px
+
+.content__border
+    width: 100%
+    max-width: 26px
+    padding: 0 0 15% 0   
+    margin: 1.55% 0 0 4%
+ 
