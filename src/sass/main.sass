@@ -4,7 +4,8 @@
 body
     background-repeat: no-repeat
     background-position: 50% 0
-    
+    background-size: cover
+
 .container
     width: 100%
     max-width: 1020px
@@ -92,6 +93,8 @@ body
     max-width: 555px
     margin: -17% 0 0 0
     z-index: -1
+    @media screen and (max-width: 1035px)
+        width: 55%
 
 .background__bottom__right
     padding: 0 0 28% 0   
@@ -99,30 +102,40 @@ body
     max-width: 464px
     margin: -14% 0 0 0
     z-index: -1
+    @media screen and (max-width: 1035px)
+        width: 45%
+
 
 .content__wrap
     display: flex
     justify-content: space-around
     align-items: flex-start
-    margin: -53.3% 0 0 5%
-    padding: 5.6% 0% 2.069% 0%
-    width: 100%
-    max-width: 900px
+    margin: -53.3% 0 0 0%
+    padding: 5.6% 0% 2.069% 5%
+    width: 88%
     background-color: #ecebdd
     z-index: 1
+    @media screen and (max-width: 1000px)
+        margin: -53.3% 0 0 5%
+        padding: 5.6% 0% 2.069% 0%
 
 .content__image
     width: 100%
     max-width: 421px
     z-index: 50
+    @media screen and (max-width: 982px)
+        width: 50%
 
 .background__dark
     margin: -3% 0% 0% 4%
     padding: 16% 0 16%
     width: 100%
     background-size: cover
+    background-blend-mode: darken
     z-index: 15
+    border: 1px solid #fff
     box-shadow: inset 0px 0px 0px 12px #ddd9c2
+    position: relative
 
 .background__item
     background-position: center
@@ -135,6 +148,10 @@ body
     display: inline-block
     width: 100%
     max-width: 400px
+    margin: 1.8% 0 0 0    
+    @media screen and (max-width: 982px)
+        width: 50%
+        margin: 1.8% 0 0 2%    
 
 h2 
     font-size: 1.027em
@@ -145,7 +162,9 @@ h2
     letter-spacing: 0.219em
     margin: 3.5% 0 0 13%
     z-index: 1
-    
+    @media screen and (max-width: 940px)
+        font-size: 0.875em
+
 .content__span
     color: #9d2d2a   
 
@@ -156,7 +175,9 @@ h2
     line-height: 1.455
     text-align: left
     padding: 5.5% 0 0 0
-
+    @media screen and (max-width: 880px)
+        line-height: 1.1
+   
 .first__text
     font-style: italic
     width: 100%
@@ -183,15 +204,16 @@ h2
     font-family: trajan
     color: #6b644c
 
-.content__abouts
-    margin: 1.8% 0 0 0    
-
 .background__titles
     width: 100%
     max-width: 400px
     padding: 1% 0 3%
     margin: 0 0 0 -10%
-    
+    @media screen and (max-width: 1023px)
+        margin: 0 0 0 -5%
+    @media screen and (max-width: 940px)
+        margin: 0 0 0 0
+
 .content__inform
     display: flex
     align-items: flex-end
@@ -203,6 +225,10 @@ h2
     max-width: 26px
     padding: 0 0 15% 0   
     margin: 1.55% 0 0 4%
+    @media screen and (max-width: 860px)
+        padding: 0 0 16% 0   
+        
+
 
 /*Section CONTENT ends*/
 
@@ -228,12 +254,15 @@ h2
     margin: 6% 0 0 8%
 
 h3
-  font-size: 0.875em
-  font-family: Trajan
-  line-height: 1.2
-  text-align: center
-  letter-spacing: 3px
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25)
+    font-size: 0.625em
+    font-family: Trajan
+    line-height: 1.2
+    text-align: center
+    letter-spacing: 3px
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25)
+    -moz-transform: matrix( 1.48618383661807,0,0,1.48618383661807,0,0)
+    -webkit-transform: matrix( 1.48618383661807,0,0,1.48618383661807,0,0)
+    -ms-transform: matrix( 1.48618383661807,0,0,1.48618383661807,0,0)
 
 .prasent h3 
     color: #421635
